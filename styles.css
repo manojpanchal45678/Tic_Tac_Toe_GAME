@@ -1,0 +1,188 @@
+*,*::before,*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'sans-serif';
+}
+/* body{
+    background-color: brown;
+}
+.wrapper{
+  background-color: blue;
+} */
+ .logo
+ {
+    position: absolute;
+    width:120px;
+    height: 120px;
+    box-sizing: border-box;
+   margin-right: 88rem;
+   margin-bottom: 36.1rem;
+    border-radius: 300%;
+    opacity: 100%;
+ } 
+
+ /* @keyframes logo{
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  } */
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    background-image:url(./assets/bg2.jpg);
+    background-position: center;
+    display: grid;  
+    place-items: center; 
+    background-size:20%;
+    
+}
+
+.game-info{
+    color: rgb(240, 241, 247);
+    position: absolute;
+    top: 3rem;
+    left: 50%;
+    transform:translateX(-50%);
+    background-color: rgb(9, 103, 226);
+    /* background-color: rgb(232, 205, 28); */
+    border-radius: 1rem;
+    border: 1px solid rgb(108, 104, 104);
+    padding: 0.5rem 3rem;
+    /* text-align: center; */
+}
+
+.newGameInfo{
+    color: rgb(249, 11, 11);
+    position: absolute;
+    top: 3rem;
+    font-size: 25px;
+    background-size: 80%;
+    left: 50%;
+    transform:translateX(-50%);
+    background-color: rgb(255, 255, 255);
+    /* background-color: rgb(232, 205, 28); */
+    border-radius: 2rem;
+    border: 1px solid rgb(108, 104, 104);
+    padding: 0.5rem 3rem;
+}
+
+.tic-tac-toe{
+   width:90%;
+   max-width: 20rem;
+   background-color: rgba(16, 16, 219, 0.694);
+   border-radius: 1rem;
+   border: 1px solid rgba(230, 238, 11, 0.845);
+   padding: 2rem;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   aspect-ratio: 1/1;
+  
+}
+
+/* .start{
+    position: absolute;
+    text-align: center;
+    width:90%;
+    max-width: 10rem;
+    background-color: rgb(253, 240, 3);
+    border-radius: 1rem;
+    border: 3px solid rgba(11, 15, 238, 0.986);
+    box-shadow: 2rem;
+    margin-top: 3rem;
+    padding: 1rem;
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    
+} */
+
+.box{
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+    font-size: 4rem;
+    color: rgb(255, 255, 255);
+    border-radius: 0.8rem;
+    /* border: 1px solid rgba(253, 13, 13, 0.797);  */
+    
+    display: flex;
+    justify-content: center; 
+    text-align: center;
+}
+
+
+.box1,.box2,.box3,.box4,.box5,.box6,.box9{
+    border-right: 9px solid rgb(239, 216, 6);
+    border-bottom: 9px solid rgb(239, 216, 6);
+}
+
+.box3, .box6,.box7,.box8,.box9{
+    border-bottom: 9px solid rgb(239, 216, 6);
+}
+
+.box7, .box8{
+    border-right: 9px solid rgb(239, 216, 6);
+
+}
+/* .box1,.box4,.box7{
+    border-left: 8px solid rgb(239, 216, 6);
+
+} */
+
+
+.btn{
+    color: rgb(243, 243, 243);
+    position: absolute;
+    /* font-size: 2rem; */
+    bottom: 3rem; 
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(47, 222, 12);
+    border-radius: 3rem;
+    border: 1px solid black;
+    padding: 1rem 4rem;
+    display: none;
+    cursor: pointer;
+}
+
+.btn.newBtn{
+    color: rgb(243, 243, 243);
+    position: absolute;
+    font-size: 1rem; 
+    bottom: 3rem; 
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(232, 13, 13);
+    border-radius: 3rem;
+    border: 1px solid black;
+    padding: 0.5rem 2rem;
+    display: flex;
+
+}
+
+.btn.newBtn:hover{
+    color: rgb(0, 45, 159);
+    position: absolute;
+    font-size: 1.099rem; 
+    bottom: 3rem; 
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(243, 239, 5);
+    border-radius: 3rem;
+    border: 1px solid black;
+    padding: 0.5rem 2rem;
+    display: flex;
+}
+
+.btn.active{
+    display: flex;
+}
+
+.win{
+     background-color: rgba(32, 235, 32, 0.884);
+}
